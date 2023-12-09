@@ -21,7 +21,7 @@ const education = [
     "level": "SSLC",
     "title":"SECONDARY SCHOOL",
     "percentage": 69,
-    "description": "Secured an Average 69% in the Secondary School Leaving Certificate (10th Grade) from V.Muthampatti Govt Hr Sec School."
+    "description": "Secured an Averag 69% in the Secondary School Leaving Certificate (10th Grade) from V.Muthampatti Govt Hr Sec School."
   }
 ];
 
@@ -32,17 +32,33 @@ function Education() {
       {
         education.map((data,i) => (
           <div className="card1" key={i}>
-            <div>
-              <h1 className='educ_title'>{data.level}</h1>
+            {/* <div> */}
+              {/* <h1 className='educ_title'>{data.level}</h1>
             </div>
             <div className="card__content">
               <p className="card__title">{data.title}
               </p><p className="card__description">{data.description}</p>
+            </div> */}
+            <div class="card">
+            <div class="myCard">
+        <div class="innerCard">
+            <div class="frontSide">
+                <p class="title">{data.level}</p>
+                <p></p>
             </div>
-          </div>
+            <div class="backSide">
+                <p class="title">{data.title}</p>
+                <p>{data.description}</p>
+            </div>
+        </div>
+    </div>
 
+
+</div>
+          </div>
         ))
       }
+     
     </section>
   )
 }
