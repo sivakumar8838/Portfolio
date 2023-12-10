@@ -135,8 +135,11 @@ li {
     nav{
         height: 55px;
     }
-    #portfolio{
-        margin-top: 0px;
+    #portfolioe{
+        text-align: left;
+        font-size: 20px;
+        padding: 0;
+        padding-right: 80px;
         color: rgb(204, 217, 233);
     }
     #portfolios{

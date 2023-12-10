@@ -35,17 +35,12 @@ function Intro() {
   return (
     <section id='intro'>
       <div id='left-content'>
-        <h1 id='title'>Mr.{titleText}</h1><br />
-        <h1 id='fsd'>{fsdText}</h1>
+        <h1 id='title'>Mr.SIVAKUMAR</h1><br />
+        <h1 id='fsd'>DEVELOPER</h1>
         <p id='para'>
-          I'm very interested in creating websites and apps using a technology stack called MERN (MongoDB, Express.js, React, Node.js). Let's create something awesome together!
+          I'm very interested in creating websites and apps
         </p>
         <button className='resume' onClick={handleResumeClick}>Resume</button>
-      </div>
-      <div id='right-content'>
-        <div id='end'>
-          <img src="/images/vishnu.png" alt="" className='rounded-image' />
-        </div>
       </div>
     </section>
   );

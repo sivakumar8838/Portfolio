@@ -3,26 +3,25 @@
     justify-content: space-between;
     align-items: center;
     background: url('../../assets/1677421137532.jpg');
-    box-shadow: inset 0  0  0 260px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0  0  0 260px rgba(61, 60, 55, 0.5);
+    text-align: right;
+    padding-left: 60%;
    
 }
 
 body{
-    background-color: rgb(214, 213, 210);
+    background-color: rgb(219, 229, 231);
 }
 
 .title-container {
     display: flex;
-    flex-direction: column;
 }
 
 #title,
 #fsd {
     font-size: 2em;
-    margin-left: 20px;
     font-family: 'Arial', sans-serif;
-    overflow: hidden;
-    display: inline-block;
+    display: inline;
 }
 
 #title {
@@ -32,7 +31,6 @@ body{
     transition: color 0.3s ease-in-out;
     letter-spacing: 1px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    text-align: right;
 }
 
 #fsd {
@@ -52,37 +50,25 @@ body{
     height: 100%;
 }
 
-/* .rounded-image {
-    border-radius: 50%;
-    max-width: 100%;
-    width: 250px;
-    height: 250px;
-    position: relative;
-    animation: moveUpDown 2s infinite alternate;
-    transition: transform 0.3s ease-in-out;
-  
-} */
-
 #center {
     display: flex;
 }
 
-/* .rounded-image:hover {
-    animation: scaleUp 0.3s ease-in-out;
-    transform: scale(1.1);
-} */
-
 #para {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
-    line-height: 30px;
+    line-height: 20px;
     text-indent: 40px;
     padding: 1%;
-    word-spacing: 7px;
+    word-spacing: px;
+    text-align: right;
 }
 
 #left-content{
     margin-left: 2%;
+    text-align:right;
+    padding-top: 30px;
+    margin-right: 20px;
 }
 
 button {
@@ -140,34 +126,28 @@ button:active {
     }
 }
 
-@media (max-width: 768px){
-    #content,#end,p{
-        display: flex;
-        flex-wrap: wrap;
+@media (max-width:800px){
+    #left-content{
+        margin-left: 0;
+            text-align: justify; 
+            padding-top: 10px; 
+            margin-right: px;
     }
 }
-
-@media (max-width:768px){
+@media (max-width:800px){
 #intro{
     display: block;
-    text-align: right;
+    text-align: center;
 }
-#end{
-    margin: 3% auto;
-    padding-left: 5%;
-    flex-shrink: 0;
-    cursor: pointer;
-    width: 300px;
-    height: 100%;
-}
+
 #para{
     text-align: justify;
-    padding: 2%;
+    padding: 0%;
 }
 button{
     margin: 5% auto;
 }
 .resume{
-    margin-left:  32%;
+    margin-left:  0px;
 }
 }
