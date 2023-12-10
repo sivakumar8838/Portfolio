@@ -5,7 +5,7 @@ function Contact() {
   return (
     <section id='contact'>
       <div>
-        <h1 id='title'>Get in Touch</h1>
+        <h1 className='titles'>Get in Touch</h1>
         <div className="card">
       
           <a className="social-link2" href='https://github.com/sivakumar8838?tab=repositories' target='_blank'>

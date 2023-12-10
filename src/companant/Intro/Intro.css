@@ -133,7 +133,7 @@ button:active {
             margin-right: px;
     }
     #title{
-        text-align: right;
+        text-align: left;
         padding-right: 0px;
     }
 }
