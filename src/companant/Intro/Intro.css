@@ -30,7 +30,7 @@ body{
     background-clip: text;
     color: transparent;
     transition: color 0.3s ease-in-out;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     text-align: right;
 }

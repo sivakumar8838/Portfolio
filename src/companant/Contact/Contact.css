@@ -1,7 +1,8 @@
 .card {
     display: flex;
     height: 70px;
-    width: 350px;
+    width: 360px;
+    margin-left: 50px;
   }
   
   .card svg {
@@ -69,6 +70,9 @@
   }
   
   @keyframes bounce_613 {
+    30%{
+      transform: scale(1.6);
+    }
     40% {
       transform: scale(1.4);
     }

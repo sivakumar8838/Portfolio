@@ -16,7 +16,9 @@ function Navbar() {
     <div className='sk'>
     <div className='sk'>
       <nav>
-        <h1 id='portfolio'>Portfolio</h1>
+      <div id='portfolio-container'>
+        <h1 id='portfolios'>Portfolio</h1><h2 id='portfolioe'>Full Sack Developer</h2>
+        </div>
         <ul className={menu ? 'show' : 'hide'}>
           <li><a href='/' onClick={closeMenu}>Intro</a></li>
           <li><a href='#about' onClick={closeMenu}>About</a></li>
