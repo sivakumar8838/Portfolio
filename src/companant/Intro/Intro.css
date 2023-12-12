@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: rgb(219, 229, 231);
+    background-color: rgb(23, 211, 249);
 }
 
 .title-container {
@@ -18,7 +18,7 @@ body{
 
 #title,
 #fsd {
-    font-size: 2em;
+    font-size: 3em;
     font-family: 'Arial', sans-serif;
     display: inline;
 }
@@ -56,53 +56,72 @@ body{
 #para {
     font-size: 20px;
     font-weight: bold;
-    line-height: 20px;
-    text-indent: 40px;
-    padding: 1%;
-    word-spacing: px;
-    text-align: right;
+    line-height: 0px;
+    padding: 0%;
+    word-spacing: 1px
 }
 
 #left-content{
-    margin-left: 2%;
-    text-align:right;
+    margin-left: 0%;
     padding-top: 30px;
-    margin-right: 20px;
+    margin-left: 20px;
+    
 }
-
 button {
-    width: 165px;
-    height: 62px;
-    cursor: pointer;
-    color: #fff;
-    font-size: 17px;
-    border-radius: 1rem;
-    border: none;
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
     position: relative;
-    background: #928ac1;
-    transition: 0.1s;
-    margin: 2% 5%;
-}
+    transition: all 0.3s;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
-button::after {
-    content: '';
-    height: 100%;
-    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
-    filter: blur(15px);
-    z-index: -1;
+   }
+   
+   button::after {
+    pointer-events: none;
+    content: "";
     position: absolute;
+    top: 120%;
     left: 0;
-    top: 0;
-}
-
-button:active {
-    transform: scale(0.9) rotate(3deg);
-    background: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
-    transition: 0.5s;
-}
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
+   
 
 .resume{
-    margin: 2% 50%  3%;
+    margin: 6% 1%  3%;
 }
 
 @keyframes moveUpDown {
@@ -127,14 +146,14 @@ button:active {
 
 @media (max-width:800px){
     #left-content{
-        margin-left: 0;
+        margin-right: 5%;
             text-align: justify; 
             padding-top: 10px; 
-            margin-right: px;
+            margin-right: 5px;
     }
     #title{
-        text-align: left;
-        padding-right: 0px;
+        text-align: center;
+        padding-right: 0;
     }
 }
 @media (max-width:800px){
@@ -145,12 +164,12 @@ button:active {
 
 #para{
     text-align: justify;
-    padding: 0%;
+    padding: 0;
 }
 button{
     margin: 5% auto;
 }
 .resume{
-    margin-left:  0px;
+    margin-left:  0;
 }
 }

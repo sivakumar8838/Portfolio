@@ -40,7 +40,9 @@ function Intro() {
         <p id='para'>
           I'm very interested in creating websites and apps
         </p>
-        <button className='resume' onClick={handleResumeClick}>Resume</button>
+        {/* <button className='resume' onClick={handleResumeClick}>Resume</button> */}
+        <button className='resume' onClick={handleResumeClick}> <span>View Resume</span>
+</button>
       </div>
     </section>
   );
