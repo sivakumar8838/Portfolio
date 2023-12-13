@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     background: url('../../assets/1677421137532.jpg');
-    box-shadow: inset 0  0  0 260px rgba(61, 60, 55, 0.5);
+    box-shadow: inset 0  0  0 260px rgba(15, 15, 15, 0.5);
     text-align: left;
    
 }
@@ -54,11 +54,13 @@ body{
 }
 
 #para {
+    color: rgb(250, 245, 245);
     font-size: 20px;
     font-weight: bold;
     line-height: 0px;
     padding: 0%;
     word-spacing: 1px
+    
 }
 
 #left-content{

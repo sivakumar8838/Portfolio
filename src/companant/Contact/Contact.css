@@ -10,6 +10,7 @@
   }
 
   .titles{
+    font-size: 350%;
     padding: 10%;
     margin-left: 25%;
     background: linear-gradient(90deg, #f31322, #3f51b5);
