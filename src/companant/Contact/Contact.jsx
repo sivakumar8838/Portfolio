@@ -6,7 +6,7 @@ function Contact() {
     <section id='contact'>
       <div>
         <h1 className='titles'>Get in Touch</h1>
-        <div className="card">
+        <div className="card9">
       
           <a className="social-link2" href='https://github.com/sivakumar8838?tab=repositories' target='_blank'>
             <svg viewBox="0 0 496 512" height="1em" fill="#fff" xmlns="http://www.w3.org/2000/svg">

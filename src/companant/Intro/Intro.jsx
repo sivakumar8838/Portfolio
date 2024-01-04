@@ -41,7 +41,7 @@ function Intro() {
           I'm very interested in creating websites and apps
         </p>
         {/* <button className='resume' onClick={handleResumeClick}>Resume</button> */}
-        <button className='resume' onClick={handleResumeClick}> <span>View Resume</span>
+        <button id='button1' className='resume' onClick={handleResumeClick}> <span className='Resume'> Resume</span>
 </button>
       </div>
     </section>
