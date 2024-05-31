@@ -36,14 +36,17 @@ function Intro() {
     <section id='intro'>
       <div id='left-content'>
         <h1 id='title'>Mr.SIVAKUMAR</h1><br />
-        <h1 id='fsd'>DEVELOPER</h1>
+        <h1 id='fsd'>FULL STACK DEVELOPER</h1>
         <p id='para'>
           I'm very interested in creating websites and apps
         </p>
-        {/* <button className='resume' onClick={handleResumeClick}>Resume</button> */}
         <button id='button1' className='resume' onClick={handleResumeClick}> <span className='Resume'> Resume</span>
 </button>
+  
       </div>
+      <div>
+<img className='img' src='https://i.postimg.cc/L52t5b9Q/1677420223657.jpg'></img>
+</div>
     </section>
   );
 }

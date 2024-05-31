@@ -4,9 +4,9 @@ import './Projects.css';
 
 function Projects({ projects }) {
   return (
-    <div id='project'>
+    <div id='project1'>
       <h2 className='Project'>Projects</h2>
-      <div>
+      <div className='map'>
         {projects.map((project) => (
           <section key={project._id} className='d'>
             <div className="card-container">

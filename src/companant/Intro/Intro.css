@@ -2,12 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: url('../../assets/1677421137532.jpg');
+  background-color: black;
     box-shadow: inset 0  0  0 260px rgba(15, 15, 15, 0.5);
     text-align: left;
-   
+    
 }
-
 body{
     background-color: rgb(23, 211, 249);
 }
@@ -54,12 +53,15 @@ body{
 }
 
 #para {
+   
+    display: block;
     color: rgb(250, 245, 245);
     font-size: 20px;
     font-weight: bold;
-    line-height: 0px;
+    line-height: 20px;
     padding: 0%;
     word-spacing: 1px
+    
     
 }
 
@@ -123,7 +125,20 @@ body{
    
 
 .resume{
+    display: flex;
     margin: 6% 1%  3%;
+    display: inline-block;
+  
+}
+.img{
+    text-align: right;
+    margin-left: 80px;
+ padding: 30px;
+  width: 50%;
+  display: flex;
+overflow: hidden;
+border-radius: 19%;
+  
 }
 
 @keyframes moveUpDown {
@@ -146,16 +161,19 @@ body{
     }
 }
 
-@media (max-width:800px){
+@media (max-width:900px){
     #left-content{
-        margin-right: 5%;
+         margin-left: 40px;
             text-align: justify; 
-            padding-top: 10px; 
-            margin-right: 5px;
+            text-align: center;
     }
     #title{
         text-align: center;
         padding-right: 0;
+        
+    }
+    #img{
+
     }
 }
 @media (max-width:800px){
@@ -163,6 +181,19 @@ body{
     display: block;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    #para {
+      font-size: 18px; 
+    }
+  }
+  
+  
+  @media (max-width: 576px) {
+    #para {
+      font-size: 16px; 
+    }
+  }
 
 #para{
     text-align: center;
@@ -173,5 +204,8 @@ button{
 }
 .resume{
     margin-left:  0;
+}
+.img {
+    display: none;
 }
 }
