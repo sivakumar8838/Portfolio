@@ -13,8 +13,8 @@ function Navbar() {
   };
 
   return (
-    <div className='sk'>
-    <div className='sk'>
+    <div>
+    <div>
       <nav>
       <div id='portfolio-container'>
       <h1 id='portfolios'>Portfolio</h1>

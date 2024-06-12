@@ -6,7 +6,9 @@ nav {
 
 
 }
-
+.img-fluid{
+border-radius: 30px;
+}
 nav a {
   color: rgb(249, 244, 244);
   text-decoration: none;
@@ -34,20 +36,11 @@ li {
   font-size: 20px;
   margin-bottom: 10px;
 }
-#portfolio-container {
-  display: flex;
-  justify-content: space-between;
-}
-.siva{
-  margin-left: 100px;
- 
-}
+
+
 
 #portfolios {
-  text-align: left;
-  font-size: 30px;
-  padding-left: 5px;
-  padding-top: 1px;
+font-size: 40px;
   text-shadow:
     0px 0px 10px rgb(8, 175, 246),
     0px 0px 20px rgb(8, 175, 246),
@@ -166,4 +159,37 @@ li {
       margin: 20px 30px;
       cursor: pointer;
   }
+}
+
+@media (max-width: 811px) {
+.img-fluid {
+  display: none;
+  
+}
+}
+
+#intro {
+  padding: 2rem;
+}
+
+#left-content {
+  max-width: 50%;
+}
+
+#title, #fsd {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#para {
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  padding: 0.5rem 1rem;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
 }

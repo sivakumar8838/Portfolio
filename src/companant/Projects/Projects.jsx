@@ -1,34 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Projects.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Projects({ projects }) {
-  return (
-    <div id='project1'>
-      <h2 className='Project'>Projects</h2>
-      <div className='map'>
-        {projects.map((project) => (
-          <section key={project._id} className='d'>
-            <div className="card-container">
-              <div className="card">
-                <div className="front-content">
-                  <p>{project.title}</p>
-                </div>
-                <div className="content">
-                  <p className="heading">{project.title}</p>
-                  <p className='p'>{project.description}</p>
-                  <a href={project.sourceCode} target='_blank' rel='noopener noreferrer'> <button className='btn'>sourceCode</button></a>
-                  <a href={project.liveDemo} target="_blank" rel="noopener noreferrer">
-                  <button class="btn">
-                    liveDemo
-                  </button>
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-                  </a>
-                </div>
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
+  };
+
+  const currentProject = projects[currentIndex];
+
+  return (
+    <div id='project1' className='container my-5'>
+      <h2 className='text-center1 mb-4'>Projects</h2>
+      <div className='row justify-content-center'>
+        <div className='col-md-6 mb-4'>
+          <div className="card h-100">
+            <div className="card-body d-flex flex-column">
+              <h5 className="card-title">{currentProject.title}</h5>
+              <p className="card-text">{currentProject.description}</p>
+              <div className="mt-auto">
+                <a href={currentProject.sourceCode} target='_blank' rel='noopener noreferrer' className='btn btn-primary me-2'>
+                  Source Code
+                </a>
+                <a href={currentProject.liveDemo} target='_blank' rel='noopener noreferrer' className='btn btn-secondary'>
+                  Live Demo
+                </a>
               </div>
             </div>
-          </section>
-        ))}
+          </div>
+        </div>
+      </div>
+      <div className='row'>
+        <div className='col text-center'>
+          <button onClick={handleNext} className='btn btn-primary'>Next</button>
+        </div>
       </div>
     </div>
   );

@@ -24,6 +24,7 @@
     background: linear-gradient(120deg, #13344b, #8f39ac, rgb(238, 122, 13));
     background-clip: text;
     color: transparent;
+    text-align: center;
 }
 
 .skilltitle {

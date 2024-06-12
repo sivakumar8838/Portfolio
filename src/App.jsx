@@ -6,7 +6,7 @@ import Skills from './companant/Skills/Skills'
 import Education from './companant/Education/Educaion'
 import Certification from './companant/Certification/About'
 import Contact from './companant/Contact/Contact'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   
  const projects = [

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Intro.css';
 
 function Intro() {
@@ -28,25 +29,24 @@ function Intro() {
 
   const handleResumeClick = () => {
     const resumeUrl = "https://drive.google.com/file/d/1D7P9Irdb1h9-QbjyAwBpbDjk-wPuriQ0/view?usp=drivesdk ";
-
     window.open(resumeUrl, '_blank');
   };
 
   return (
-    <section id='intro'>
-      <div id='left-content'>
-        <h1 id='title'>Mr.SIVAKUMAR</h1><br />
-        <h1 id='fsd'>FULL STACK DEVELOPER</h1>
-        <p id='para'>
+    <section id='intro' className='d-flex align-items-center justify-content-between'>
+      <div id='left-content' className='text-center text-md-start'>
+        <h1 id='title'>{titleText}</h1><br />
+        <h1 id='fsd'>{fsdText}</h1>
+        <p id='para' className='my-3'>
           I'm very interested in creating websites and apps
         </p>
-        <button id='button1' className='resume' onClick={handleResumeClick}> <span className='Resume'> Resume</span>
-</button>
-  
+        <button id='button1' className='btn btn-primary' onClick={handleResumeClick}> 
+          <span className='Resume'> Resume</span>
+        </button>
       </div>
       <div>
-<img className='img' src='https://i.postimg.cc/L52t5b9Q/1677420223657.jpg'></img>
-</div>
+        <img className='img-fluid' src='https://i.postimg.cc/L52t5b9Q/1677420223657.jpg' alt='Sivakumar'/>
+      </div>
     </section>
   );
 }
