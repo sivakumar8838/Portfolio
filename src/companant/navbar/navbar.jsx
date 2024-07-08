@@ -15,7 +15,7 @@ function Navbar() {
   return (
     <div>
     <div>
-      <nav>
+      <nav className='nav'>
       <div id='portfolio-container'>
       <h1 id='portfolios'>Portfolio</h1>
         </div>

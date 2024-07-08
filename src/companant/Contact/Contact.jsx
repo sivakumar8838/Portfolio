@@ -6,8 +6,8 @@ function Contact() {
   return (
     <section id='contact' className='container my-5'>
       <h2 className='section-title text-center mb-4'>Get in Touch</h2>
-      <ul className="list-unstyled d-flex justify-content-center">
-        <li className="icon-content mx-3">
+      <div className="list-unstyled d-flex justify-content-center">
+        <div className="icon-content mx-3">
           <a
             href='https://github.com/sivakumar8838?tab=repositories'
             target='_blank'
@@ -23,8 +23,8 @@ function Contact() {
             </svg>
           </a>
           <div className="tooltip">GitHub</div>
-        </li>
-        <li className="icon-content mx-3">
+        </div>
+        <diva className="icon-content mx-3">
           <a
             href='mailto:sivamss5882@gmail.com'
             target='_blank'
@@ -39,8 +39,8 @@ function Contact() {
             </svg>
           </a>
           <div className="tooltip">Email</div>
-        </li>
-        <li className="icon-content mx-3">
+        </diva>
+        <div className="icon-content mx-3">
           <a
             href='https://www.linkedin.com/in/vishnu-d-1453aa246/'
             target='_blank'
@@ -54,8 +54,8 @@ function Contact() {
             </svg>
           </a>
           <div className="tooltip">LinkedIn</div>
-        </li>
-        <li className="icon-content mx-3">
+        </div>
+        <div className="icon-content mx-3">
           <a
             href='https://www.instagram.com/queen_of_hinata/'
             target='_blank'
@@ -69,8 +69,8 @@ function Contact() {
             </svg>
           </a>
           <div className="tooltip">Instagram</div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </section>
   );
 }

@@ -15,7 +15,7 @@ function Projects({ projects }) {
     <div id='project1' className='container my-5'>
       <h2 className='text-center1 mb-4'>Projects</h2>
       <div className='row justify-content-center'>
-        <div className='col-md-6 mb-4'>
+        <div className='col-md-6 mb-5'>
           <div className="card h-100">
             <div className="card-body d-flex flex-column">
               <h5 className="card-title">{currentProject.title}</h5>
