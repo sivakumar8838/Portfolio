@@ -45,7 +45,7 @@ function Intro() {
         </button>
       </div>
       <div>
-        <img className='img-fluid' src='https://i.ibb.co/SXYJJLV/Snapinsta-app-284997606-528967525606434-8416937526891635131-n-1080.jpg' alt='Sivakumar'/>
+jpg        <img className='img-fluid' src='' alt='Sivakumar'/>
       </div>
     </section>
   );
