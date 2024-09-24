@@ -1,19 +1,23 @@
-/* Projects.css */
-.card {
-  border: 1px solid #ddd;
-  border-radius: 0.25rem;
-
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.text-center1{
+
+.text-center1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-size: 34px;
-  color: #080808;
   background: linear-gradient(120deg, #13344b, #8f39ac, rgb(238, 122, 13));
   background-clip: text;
   color: transparent;
   text-align: center;
-  }
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 
 .card-title {
   font-size: 1.25rem;

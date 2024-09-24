@@ -14,20 +14,17 @@ function Navbar() {
 
   return (
     <div>
-    <div>
       <nav className='nav'>
-      <div id='portfolio-container'>
-      <h1 id='portfolios'>Portfolio</h1>
+        <div id='portfolio-container'>
+          <h1 id='portfolios'>Portfolio</h1>
         </div>
         
         <ul className={menu ? 'show' : 'hide'}>
-        
           <li><a href='/' onClick={closeMenu}>Intro</a></li>
           <li><a href='#about' onClick={closeMenu}>About</a></li>
           <li><a href='#skills' onClick={closeMenu}>Skills</a></li>
-          <li><a href='#project' onClick={closeMenu}>Projects</a></li>
+          <li><a href='#project' onClick={closeMenu}>Projects</a></li> {/* Ensure this points to the correct section */}
           <li><a href='#education' onClick={closeMenu}>Education</a></li>
-          {/* <li><a href='#certification' onClick={closeMenu}>Certification</a></li> */}
           <li><a href='#contact' onClick={closeMenu}>Contact</a></li>
         </ul>
        
@@ -40,7 +37,6 @@ function Navbar() {
           </label>
         </div>
       </nav>
-      </div>
     </div>
   );
 }
