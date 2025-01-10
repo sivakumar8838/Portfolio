@@ -1,5 +1,4 @@
-/* About.css */
-
+/* Base styles */
 .Project2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -15,4 +14,17 @@
   line-height: 1.6;
 }
 
-/* Additional custom styles if needed */
+
+.img {
+  display: none; 
+}
+
+
+@media (min-width: 673px) {
+  .img {
+    display: none;
+    max-width: 100%;
+  }
+}
+
+
