@@ -19,7 +19,7 @@ function App() {
   {
     "title": "ShoppingCard",
     "description": "Shorten and share long URLs with ease, and gain insights into link performance through analytics. The URL shortener is built using React, Express, MongoDB, and Node.js to provide a robust and scalable solution.",
-    "sourceCode": "https://github.com/Vishnu-D-2002/Dynamic_Portfolio_-_Export_PDF-FE-",
+    "sourceCode": ":https://github.com/sivakumar8838/ShoppingCard",
     "liveDemo": "https://main--spiffy-medovik-29bd79.netlify.app/"
   },
   {
@@ -29,10 +29,10 @@ function App() {
     "liveDemo": "https://main--deft-fudge-828488.netlify.app/"
   },
   {
-    "title": "Rest Countries ",
+    "title": "Price Card ",
     "description": "Discover detailed information about countries and regions around the world. This interactive explorer, developed with DOM , Node.js and powered by the REST Countries API, allows users to explore diverse geographical and cultural data.",
-    "sourceCode": "https://github.com/Vishnu-D-2002/task/tree/main/task-11",
-    "liveDemo": "https://main--enchanting-swan-189083.netlify.app/task-11/weather_display.html"
+    "sourceCode": "https://github.com/sivakumar8838/React-Price-Card-Task",
+    "liveDemo": "https://cosmic-alpaca-5b0c4a.netlify.app"
   }
 ]
   return (
